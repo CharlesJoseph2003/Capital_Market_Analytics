@@ -152,7 +152,7 @@ def current_indicator_Dow(dropdown):
 
 def tree_map():
     fig = px.treemap(new_treemap_df_2, path=[px.Constant("all"), 'sector','symbol'], values = 'marketCap', color='colors', height=700,
-        color_discrete_map ={'(?)':'#bae4f7', 'red':'red', 'indianred':'indianred','forestgreen':'forestgreen', 'lightgreen':'lightgreen','lime':'lime','green':'green'},
+        color_discrete_map ={'(?)':'#bae4f7', 'red':'red', 'indianred':'indianred','gray':'gray', 'lightgreen':'lightgreen','lime':'lime','green':'green'},
         hover_data = {'delta':':.2p'},
         custom_data=['delta','sector'])
     fig.update_traces(
