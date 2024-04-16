@@ -24,12 +24,6 @@ paper_bgcolor2 = 'white'
 # print('new Df', new_df)
 
 def generate_graphs1(dropdown, time): 
-    # selected_key = [key for key, value in symbols_dict.items() if value == dropdown][0]
-    # print('this is the selected key', selected_key)
-    # symbol = new_df_2.loc[dropdown, 'symbol']
-    # print('this is the symbol',symbol)
-    # print(f"Dropdown value: {dropdown}")
-
     fig = make_subplots(subplot_titles=[dropdown], specs=[[{"secondary_y": True}]],)
     # Stock = yf.Ticker(str(df_info_result.loc[dropdown, 'symbol']))
     Stock = yf.Ticker(dropdown)
