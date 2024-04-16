@@ -1,6 +1,6 @@
 from Stocks_Graphs import *
 from Comparison_Graphs import *
-from dash.dependencies import Input, Output, State
+from dash.dependencies import Input, Output
 
 def Crypto_Callbacks(app): 
 

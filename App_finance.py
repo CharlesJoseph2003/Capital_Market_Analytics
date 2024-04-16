@@ -22,33 +22,6 @@ if __name__ == '__main__':
     app.run_server(debug=True)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # app.callback(
 #     Output("current-right", "figure"),
 #     Input('right-dropdown', 'value'),

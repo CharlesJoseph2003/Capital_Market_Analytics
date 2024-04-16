@@ -1,12 +1,5 @@
-import yfinance as yf
 import pandas as pd
-from plotly.subplots import make_subplots
-import plotly.graph_objects as go
 import plotly.express as px
-from Index import Index_market_metrics
-from StockData import treemap
-from StockData import market_metrics
-from StockData import income_statement_table
 from CryptoData import treemap_crypto
 
 

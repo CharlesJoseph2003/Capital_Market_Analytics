@@ -55,7 +55,7 @@ def generate_graphs1(dropdown, time):
             name='Price'))
     
     if time == '5d':
-        hist = hist.resample('H').last()
+        hist = hist.resample('h').last()
         fig.update_xaxes(tickformat = '%b-%d %H:%M', tickmode = 'linear')
     elif time == '1mo':
         hist = hist.resample('D').last()

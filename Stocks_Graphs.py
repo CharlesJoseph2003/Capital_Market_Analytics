@@ -34,12 +34,6 @@ paper_bgcolor = 'white'
 paper_bgcolor2 = 'white'
 
 def generate_graphs_DOW(dropdown,time): 
-    # selected_key = [key for key, value in symbols_dict.items() if value == dropdown][0]
-    # print('this is the selected key', selected_key)
-    # symbol = new_df_2.loc[dropdown, 'symbol']
-    # print('this is the symbol',symbol)
-    # print(f"Dropdown value: {dropdown}")
-
     fig = make_subplots(subplot_titles=[dropdown], specs=[[{"secondary_y": True}]],)
     # Stock = yf.Ticker(str(df_info_result.loc[dropdown, 'symbol']))
     Stock = yf.Ticker(dropdown)
@@ -49,13 +43,10 @@ def generate_graphs_DOW(dropdown,time):
     df.reset_index(inplace=True)
     df['Date'] = pd.to_datetime(df['Date']).dt.strftime('%Y-%m-%d')
 # Filter out weekends (Saturday and Sunday) and overwrite the original df
-
-
     # print(df['Date'])
     hist['diff'] = hist['Close'] - hist['Open']
     hist.loc[hist['diff']>=0, 'color'] = 'green'
     hist.loc[hist['diff']<0, 'color'] = 'red'
-
     fig.add_trace(go.Scatter(x=hist.index,y=hist['Close'].rolling(window=1).mean(),marker_color='blue',name='20 Day MA'),)
     fig.add_trace(go.Candlestick(x=hist.index,
             open=hist['Open'],
@@ -63,7 +54,6 @@ def generate_graphs_DOW(dropdown,time):
             low=hist['Low'],
             close=hist['Close'],
             name='Price'))
-    
     if time == '5d':
         hist = hist.resample('H').last()
         fig.update_xaxes(tickformat = '%b-%d %H:%M', tickmode = 'linear')

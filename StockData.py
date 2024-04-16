@@ -78,7 +78,6 @@ symbols_list = list(df.iloc[0:total_stock, 1])
 for i in range(len(symbols_list)):
     symbols_list[i] = symbols_list[i].replace(".", "-")  # Replaces all "." with "-" in the string 
 # print('symbols list', symbols_list)
-top_symbols = []
 list_of_metrics = ['symbol','shortName','marketCap','currentPrice', 'dividendYield','volume','averageVolume',
                        'previousClose','open','dayLow','dayHigh','fiftyDayAverage','fiftyTwoWeekLow','fiftyTwoWeekHigh', 
                        'profitMargins','totalRevenue','pegRatio', 'longBusinessSummary','sector']

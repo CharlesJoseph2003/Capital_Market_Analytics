@@ -1,8 +1,5 @@
-
 from dash import html
-from dash import dcc
 import dash_mantine_components as dmc
-
 from Stocks_layout import create_layout_stocks
 from Comparison_layout import create_layout_comparison
 from Crypto_layout import create_layout_crypto

@@ -35,9 +35,9 @@ def create_layout_comparison():
                                 data=[{'value': key, 'label': value} for key, value in symbols_dict.items()],
                                         value=symbols_list[0],
                                         id='left-dropdown',
-                                        searchable=True,
+                                        searchable=False,
                                         nothingFound="No options found",
-                                        clearable=True,
+                                        clearable=False,
                                         style={'backgroundColor': 'lightgrey', 'position': 'absolute', 'z-index': '3', 'height': 'auto', 'width': '49%'}
                                 # data=[{'value': key, 'label': value} for key, value in symbols_dict.items()],
                                 # id =  'left-dropdown',
@@ -61,9 +61,9 @@ def create_layout_comparison():
                                  data=[{'value': key, 'label': value} for key, value in crypto_dict.items()],
                                         id='right-dropdown', 
                                         value=crypto_symbols[0],
-                                        searchable=True,
+                                        searchable=False,
                                         nothingFound="No options found",
-                                        clearable=True,
+                                        clearable=False,
                                         style={'backgroundColor': 'lightgrey', 'position': 'absolute', 'z-index': '3', 'width': '49%'}    # Specify the desired width}
                                         
                         

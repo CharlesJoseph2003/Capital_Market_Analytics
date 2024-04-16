@@ -28,9 +28,9 @@ def create_layout_crypto():
                                  data=[{'value': key, 'label': value} for key, value in crypto_dict.items()],
                                         id='crypto-dropdown', 
                                         value=crypto_symbols[0],
-                                        searchable=True,
+                                        searchable=False,
                                         nothingFound="No options found",
-                                        clearable=True,
+                                        clearable=False,
                                         style={'backgroundColor': 'lightgrey', 'position': 'absolute', 'z-index': '3', 'width': '49%'}    # Specify the desired width}
                                         
                         #dropdown
