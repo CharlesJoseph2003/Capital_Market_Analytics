@@ -112,22 +112,6 @@ def data_table_Index(dropdown):
     return fig
 
 
-# def update_indicator_stock_left(dropdown, n):
-#     stock_data = market_metrics()[0].loc[market_metrics()[0]['symbol'] == dropdown]
-
-#     fig = go.Figure(go.Indicator(
-#         mode="number+delta",
-#         value=stock_data['currentPrice'].iloc[0],
-#         number={'prefix': "$", "font": {"size": 20}, 'valueformat': '.2f'},
-#         title={'text': "Current Price", "font": {"size": indicator_title_text_size}},
-#         delta={'position': "bottom", 'reference': stock_data['previousClose'].iloc[0]},
-#     ))
-
-#     fig.update_layout(paper_bgcolor=paper_bgcolor2)
-
-#     return fig
-
-
 def current_indicator_left_stock(dropdown):
     stock_data = market_metrics()[0].loc[market_metrics()[0]['symbol'] == dropdown]
     print(stock_data)
@@ -165,9 +149,6 @@ def current_indicator_Dow(dropdown):
     fig.update_layout(paper_bgcolor=paper_bgcolor2)
 
     return fig
-
-# def update_indicator_Dow(n, dropdown):
-#     return current_indicator_Dow(dropdown)
 
 def tree_map():
     fig = px.treemap(new_treemap_df_2, path=[px.Constant("all"), 'sector','symbol'], values = 'marketCap', color='colors', height=700,

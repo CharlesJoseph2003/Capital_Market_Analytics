@@ -6,14 +6,8 @@ from CryptoData import crypto_symbols
 from CryptoData import crypto_dict
 from Crypto_Graphs import tree_map_crypto
 
-# print(symbols_dict)
 data=[{'value': key, 'label': value} for key, value in symbols_dict.items()]
 value=list(symbols_dict.keys())[1]
-
-# print(data)
-# print(value)
-# print(crypto_symbols[0])
-# print(symbols_list[0])
 
 data = [["5d", "5 Days"], ["1mo", "1 Month"], ['1y', '1 Year'], ['max', 'Max']]
 
@@ -60,7 +54,6 @@ def create_layout_crypto():
                                         [dmc.Radio(l, value=k) for k, l in data],
                                         id="crypto-time",
                                         value="5d",
-                                        # label="Select your favorite framework/library",
                                         size="sm",
                                         mt=10,
                                         style={'margin-left':200, 'margin-top': 40, 'position': 'absolute', 'z-index': '2'}
@@ -90,13 +83,10 @@ def create_layout_crypto():
   
                 ],style={'width': '100%', 'height': '500px','margin-bottom':-100, 'z-index': '1', 'margin-top': 25}),
         ],
-        # style={'width': '50%', 'height': '400px'}
-          # style={'display': 'flex', 'justifyContent': 'center'}),
+
           style={'margin': '0 auto'}
-        #   style={ 'margin-bottom': -80,'margin': '0 auto'}
 
         ),
-        # html.Div(style={'margin-bottom': '-70x'}),
    
 
         dmc.Grid(

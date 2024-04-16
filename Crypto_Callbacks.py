@@ -22,9 +22,3 @@ def Crypto_Callbacks(app):
         Input('crypto-dropdown', 'value')
     )(data_table2)
 
-
-
-    # app.callback(
-    #     Output()
-    # )
-        

@@ -19,11 +19,6 @@ data = [["5d", "5 Days"], ["1mo", "1 Month"], ['1y', '1 Year'], ['max', 'Max']]
 
 def create_layout_comparison():
     comparison_layout = html.Div(children=[
-        # dcc.Interval(
-        #         id='interval-component',
-        #         interval=1*100,  # in milliseconds
-        #         n_intervals=0
-        # ),
          dmc.Grid(
                 children=[
                 dmc.Col(html.Div([
@@ -39,15 +34,9 @@ def create_layout_comparison():
                                         nothingFound="No options found",
                                         clearable=False,
                                         style={'backgroundColor': 'lightgrey', 'position': 'absolute', 'z-index': '3', 'height': 'auto', 'width': '49%'}
-                                # data=[{'value': key, 'label': value} for key, value in symbols_dict.items()],
-                                # id =  'left-dropdown',
-                                # value=list(symbols_dict.keys())[0],
-                        
-                                
+
                         ),
-                        # dcc.Graph(
-                        #         id= 'current-left',
-                        #         style={'width': '15vh', 'height': '10vh'}),
+
 
 
                 ]), span="auto"),
@@ -140,13 +129,9 @@ def create_layout_comparison():
   
                 ],style={'width': '100%', 'height': '500px','margin-bottom':-100, 'z-index': '1', 'margin-top': 25}),
         ],
-        # style={'width': '50%', 'height': '400px'}
-          # style={'display': 'flex', 'justifyContent': 'center'}),
-          style={'margin': '0 auto'}
-        #   style={ 'margin-bottom': -80,'margin': '0 auto'}
 
+          style={'margin': '0 auto'}
         ),
-        # html.Div(style={'margin-bottom': '-70x'}),
    
 
         dmc.Grid(

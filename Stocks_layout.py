@@ -34,15 +34,9 @@ def create_layout_stocks():
                                         nothingFound="No options found",
                                         clearable=False,
                                         style={'backgroundColor': 'lightgrey', 'position': 'absolute', 'z-index': '3', 'height': 'auto', 'width': '49%'}
-                                # data=[{'value': key, 'label': value} for key, value in symbols_dict.items()],
-                                # id =  'left-dropdown',
-                                # value=list(symbols_dict.keys())[0],
-                        
+
                                 
                         ),
-                        # dcc.Graph(
-                        #         id= 'current-left',
-                        #         style={'width': '15vh', 'height': '10vh'}),
 
 
                 ]), span="auto"),
@@ -135,13 +129,10 @@ def create_layout_stocks():
   
                 ],style={'width': '100%', 'height': '500px','margin-bottom':-100, 'z-index': '1', 'margin-top': 25}),
         ],
-        # style={'width': '50%', 'height': '400px'}
-          # style={'display': 'flex', 'justifyContent': 'center'}),
+
           style={'margin': '0 auto'}
-        #   style={ 'margin-bottom': -80,'margin': '0 auto'}
 
         ),
-        # html.Div(style={'margin-bottom': '-70x'}),
    
 
         dmc.Grid(
@@ -236,10 +227,8 @@ def create_layout_stocks():
   
                 ],style={'width': '100%', 'height': '500px','margin-top':-50, 'z-index': '3', 'margin-right': -200}),
         ],
-        # style={'width': '50%', 'height': '400px'}
-          # style={'display': 'flex', 'justifyContent': 'center'}),
+
           style={'margin-top':-50,'margin': '0 auto'}
-        #   style={ 'margin-bottom': -80,'margin': '0 auto'}
 
         ),
 

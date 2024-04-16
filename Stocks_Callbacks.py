@@ -16,11 +16,6 @@ def Stocks_Callbacks(app):
         Input('left-dropdown_stocks', 'value')
     )(data_table)
 
-    # app.callback(
-    #     Output("current-left_stocks", "figure"),
-    #     Input('left-dropdown_stocks', 'value'),
-    # )(current_indicator_left_stock)
-
 
     app.callback(Output('current-left_stocks', 'figure'),
                 Input('interval-component-stocks', 'n_intervals'),

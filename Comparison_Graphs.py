@@ -168,40 +168,6 @@ def update_indicator_crypto(n, dropdown):
     return current_indicator_right(dropdown)
 
 
-
-
-# def current_indicator_left(dropdown):
-#     fig = go.Figure(go.Indicator(
-#         mode="number+delta",
-#         value= new_df.loc[dropdown,'currentPrice'],  # Assuming df is defined somewhere before this function
-#         number={'prefix': "$", "font":{"size":20}, 'valueformat': '.2f'},
-#         title= {'text': "Current Price", "font":{"size":indicator_title_text_size}},
-#         delta={'position': "bottom", 'reference': new_df.loc[dropdown,'previousClose']},
-#         # domain={'x': [0, 1], 'y': [0, 0.5]}
-#     ))
-
-#     fig.update_layout(paper_bgcolor=paper_bgcolor2)
-
-#     return fig
-
-
-
-# def current_indicator_right(dropdown):
-#     fig = go.Figure(go.Indicator(
-#         mode="number+delta",
-#         value= new_crypto_df.loc[dropdown,'currentPrice'],  # Assuming df is defined somewhere before this function
-#         number={'prefix': "$", "font":{"size":20}},
-#         title= {'text': "Current Price", "font":{"size":indicator_title_text_size}},
-#         delta={'position': "bottom", 'reference': new_crypto_df.loc[dropdown, 'previousClose']},
-#         # domain={'x': [0, 1], 'y': [0, 1]}
-#     ))
-
-#     fig.update_layout(paper_bgcolor=paper_bgcolor)
-
-#     return fig
-
-
-
 def data_table(dropdown):
     rowEvenColor = 'lightgrey'
     rowOddColor = 'white'

@@ -44,8 +44,3 @@ def Comparison_Callbacks(app):
                 Input('interval-component', 'n_intervals'), #Crypto Indicator
                 Input('right-dropdown', 'value')
     )(update_indicator_crypto)
-
-    # app.callback(
-    #     Output("current-left", "figure"),
-    #     Input('left-dropdown', 'value'),
-    # )(current_indicator_left)

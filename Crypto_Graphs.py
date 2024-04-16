@@ -5,15 +5,12 @@ from CryptoData import treemap_crypto
 
 df_info_treemap = treemap_crypto()
 new_treemap_df = pd.DataFrame(df_info_treemap)
-# print('new_treemap2',new_treemap_df)
 new_treemap_df_2 = new_treemap_df[['symbol','marketCap']].copy()
 color_group = [-1,-0.02,-0.01,0, 0.01, 0.02,1]
-# new_treemap_df_2['colors'] = pd.cut(new_treemap_df['delta'], bins=color_group, labels=['red','indianred','forestgreen','lightgreen','lime','green'])
 
 def tree_map_crypto():
     fig = px.treemap(new_treemap_df_2, path=[px.Constant("all"), 'symbol'], values = 'marketCap', height=700,
         hover_data = {'marketCap'})
-        # custom_data=['delta','sector'])
     fig.update_traces(
         hovertemplate="<br>".join([
         "Stock: %{label}",
