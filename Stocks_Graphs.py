@@ -114,7 +114,7 @@ def data_table_Index(dropdown):
 
 def current_indicator_left_stock(dropdown):
     stock_data = market_metrics()[0].loc[market_metrics()[0]['symbol'] == dropdown]
-    print(stock_data)
+    # print(stock_data)
     fig = go.Figure(go.Indicator(
         mode="number+delta",
         value=stock_data['currentPrice'].iloc[0],  # Assuming df is defined somewhere before this function
@@ -136,7 +136,7 @@ def update_indicator_stock(n, dropdown):
 
 def current_indicator_Dow(dropdown):
     Index_data = Index_market_metrics()[0].loc[Index_market_metrics()[0]['symbol'] == dropdown]
-    print(Index_data)
+    # print(Index_data)
     fig = go.Figure(go.Indicator(
         mode="number+delta",
         value=Index_data['open'].iloc[0],  # Assuming df is defined somewhere before this function

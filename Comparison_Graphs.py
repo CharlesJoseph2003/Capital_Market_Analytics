@@ -122,7 +122,7 @@ def generate_graphs2(dropdown, time):
 
 def current_indicator_left(dropdown):
     stock_data = market_metrics()[0].loc[market_metrics()[0]['symbol'] == dropdown]
-    print(stock_data)
+    # print(stock_data)
     fig = go.Figure(go.Indicator(
         mode="number+delta",
         value=stock_data['currentPrice'].iloc[0],  # Assuming df is defined somewhere before this function
@@ -143,7 +143,7 @@ def update_indicator(n, dropdown):
 
 def current_indicator_right(dropdown):
     crypto_data = crypto_metrics()[0].loc[crypto_metrics()[0]['symbol'] == dropdown]
-    print(crypto_data)
+    # print(crypto_data)
     fig = go.Figure(go.Indicator(
         mode="number+delta",
         value=crypto_data['currentPrice'].iloc[0],  # Assuming df is defined somewhere before this function

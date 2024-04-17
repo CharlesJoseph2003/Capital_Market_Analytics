@@ -103,7 +103,7 @@ def market_metrics():
         lst2.append(stock_dict)
     # print(lst2)
     Stock_df = pd.DataFrame(lst2, columns=[i for i in list_of_metrics])
-    print(Stock_df)
+    # print(Stock_df)
     return Stock_df, percent_change(Stock_df)
 
 
