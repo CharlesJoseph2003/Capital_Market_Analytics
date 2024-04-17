@@ -3,12 +3,6 @@ from bs4 import BeautifulSoup
 import requests
 import pandas as pd
 import time
-# url =  'https://stockanalysis.com/list/biggest-companies/'
-# r = requests.get(url)
-# # print(r)
-# soup  =  BeautifulSoup(r.text, 'lxml')
-# # table = soup.find('table', class_= 'default-table table marketcap-table dataTable')
-# table = soup.find('table', class_= 'symbol-table svelte-132bklf') #might have to update html tag because website changes it 
 
 
 total_stock=20

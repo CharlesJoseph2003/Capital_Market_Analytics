@@ -10,11 +10,6 @@ from Stocks_Graphs import tree_map
 data=[{'value': key, 'label': value} for key, value in symbols_dict.items()]
 value=list(symbols_dict.keys())[1]
 
-# print(data)
-# print(value)
-# print(crypto_symbols[0])
-# print(symbols_list[0])
-
 data = [["5d", "5 Days"], ["1mo", "1 Month"], ['1y', '1 Year'], ['max', 'Max']]
 
 def create_layout_stocks():

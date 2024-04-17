@@ -2,7 +2,6 @@ import pandas as pd
 import plotly.express as px
 from CryptoData import treemap_crypto
 
-
 df_info_treemap = treemap_crypto()
 new_treemap_df = pd.DataFrame(df_info_treemap)
 new_treemap_df_2 = new_treemap_df[['symbol','marketCap']].copy()
